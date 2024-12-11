@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+<head>
+
+<style>
+body {
+  background-color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* box-sizing: border-box; */
+}
+
+button {
+  background-color: orange;
+  color: white;
+  padding: 15px 150px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+.form{
+    width: 400px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+img{
+    float: left;
+    width: 700px;
+    height: 650px;
+    /* padding-left: 200px; */
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #333; /* Dark gray links */
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+  <img src="frank001/bazaar1.png">
+<div class="container">
+  <h2>Shenki-bazaar</h2>
+  <form class="form">
+    <div>
+      <label for="email" class="label"></label>
+      <input type="text" id="text" name="text" placeholder="Enter your name" required>
+    </div>
+
+    <div>
+      <label for="email" class="label"></label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div>
+      <label for="email" class="label"></label>
+      <input type="text" id="number" name="number" placeholder="+234  your phonenumber" required>
+    </div>
+
+    <div>Select - Gender
+    <input name ="gender" required type="radio"><label>MALE</label>
+    <input name ="gender" required type="radio"><label>FEMALE</label>
+    <input name ="gender" required type="radio"><label>OTHERS</label>
+    </div>
+
+    <div>
+      <label for="password" class="label" ></label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+
+    <div>
+      <label for="password" class="label" ></label>
+      <input type="password" id="password" name="password" placeholder="Confirm password" required>
+    </div>
+
+    <button type="submit"><a href="Shenki-bazaar1.html">Sign up</a></button>
+    <a href="Shenki-bazaarlogin.html" class="signup-link" target="_blank">Already have an account? Login</a>
+  </form>
+</div>
+</body>
+</html>

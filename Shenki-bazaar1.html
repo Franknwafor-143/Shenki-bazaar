@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shenki-bazaar</title>
+</head>
+<style>
+
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+      .header{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    background-color:#eee;
+    position:sticky;
+    padding: 15px;
+    
+
+  }
+
+  .logo{
+    font-size:50px;
+    font-weight: 900;
+    color: black;
+    padding-left: 25px;
+    
+  }
+
+  ul{
+    list-style: none;
+    display: flex;
+  }
+
+  ul>li {
+    text-align: justify;
+    margin-left:90px;
+  }
+
+   .link{
+    text-decoration:none;
+    font-size:22px;
+    font-weight:200;
+    color: black;
+    
+  }
+
+  .link:hover{
+    color: orange;
+    
+  }
+
+  button{
+    color:black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    margin-right:20px;
+    background-color: orange;
+  }
+
+  button:hover{
+    color:white;
+    background-color:rgb(239, 160, 12) ;
+       
+  }
+
+ 
+
+.main{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    margin: 80px;
+    /* background-color: orange; */
+}
+
+ .main h1{
+    text-align: left;
+    width: 600px;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+  }
+
+ .main .one{
+    text-align: left;
+    width: 650px;
+    font-size:25px;
+    padding-top: 10px;
+
+  }
+
+  .unn{
+    width: 500px;
+    height: 500px;
+    float: right;
+    margin-top: -120px;
+    
+    /* padding:80px 40px; */
+  }
+
+
+  .div2{
+    text-align: left;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    margin: 80px;
+    border-top: 2px solid black;
+    
+  }
+
+  .divv{
+    padding-left: 70px;
+  }
+
+  .img1{
+    float: left;
+    width: 350px;
+    height:350px;
+    border-radius: 20px;
+    padding-right: 40px;
+
+  }
+
+  h2{
+    /* text-align: cente; */
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin: 20px;
+  }
+
+  .para{
+    /* text-align: right; */
+    font-size: 25px;
+    color: black;
+    padding-left: 0px;
+    
+  }
+
+
+  .butt{
+    color:black;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 40px;
+    border: none;
+    margin-right: 30px;
+    background-color: orange;
+  }
+
+  .butt:hover{
+    color:white;
+    background-color:rgb(239, 160, 12) ;
+       
+  }
+
+  .div3{
+    padding: 80px 40px;
+    background-color: azure;
+  }
+  
+  .fea{
+    text-align: center;
+    color: orange;
+  }
+
+  h3{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+  }
+
+  .image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 25px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  background-color: azure;
+
+}
+
+.image-item {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding-left: 25px;
+  border-radius: 10px;
+
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-item button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: orange;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: orange;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); 
+
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color:orange;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr); 
+
+  }
+  
+}
+
+h4{
+    font-size: 40px;
+    color: black;
+    padding: 10px;
+    margin: 15px;
+}
+
+.uno1{
+  width: 800px;
+  height: 900px;
+  float: right;
+  margin-top: 100px;
+}
+
+
+.ada{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.graph{
+    color: black;
+    width: 500px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.div4{
+    padding: 80px 40px ;
+    background-color: rgb(26, 25, 25);
+}
+
+h5{
+    text-align: left;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* .div5{
+   
+} */
+
+.on{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 50px;
+
+}
+
+.Explore{
+    font-size: 35px;
+    font-weight: 100;
+    color: white;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.point{
+    color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 700px;
+    font-size: 25px;
+    padding-left: 10px;
+    
+
+}
+
+.div6{
+  /* padding-top:40px; */
+  padding-top: 100px;
+  padding-bottom: 200px;
+  padding-left: 50px;
+  margin: 70px;
+}
+
+.beco{
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.poi{
+  text-align: left;
+  font-size: 25px;
+  width: 800px;
+  margin-top: 20px;
+}
+
+.unn1{
+    width: 600px;
+    height: 600px;
+    float: right;
+    margin-top: -150px;
+    /* padding:80px 40px; */
+  }
+
+
+.omu{
+  background-color: rgb(243, 230, 206);
+  /* padding-bottom: 50px; */
+  
+}
+
+.head{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: black;
+  padding-top: 50px;
+  margin-bottom:20px ;
+  margin-top: 20px;
+  
+}
+
+
+.imagegrider{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 25px;
+  padding: 10px 20px 10px 20px;
+ 
+
+}
+
+.imageitem {
+  padding-left: 25px;
+  border-radius: 10px;
+
+}
+
+.imageitem img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: orange;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); 
+
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color:orange;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr); 
+
+  }
+  
+}
+
+.us{
+    font-size: 30px;
+    color: black;
+    /* padding: 10px; */
+    margin: 15px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.grapher{
+    color: black;
+    width: 350px;
+    font-size: 25px;
+    /* padding-top: -10px; */
+    margin: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.adama{
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  width: 100px;
+  height:100px;
+  padding-left: 150px;
+}
+
+.div7{
+    padding-top: -100px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin: 70px;
+}
+
+.last{
+  /* margin: 30px; */
+  font-size: 50px;
+  text-align: left;
+  font-weight: 700;
+  padding-top: 0;
+  margin: 35px;
+  /* padding-left: 50px; */
+}
+
+.laster{
+  font-size: 25px;
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  margin: 20px;
+  color: #aaa;
+}
+
+#alphabet{
+  display: flex;
+  gap: 55px;
+  padding: 10px 30px;
+}
+
+#alphabet>div{
+  background-color: azure;
+  color: black;
+  border-radius: 10px;
+
+}
+
+.were{
+  width: 300px;
+  height: 300px;
+  padding-left:50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  
+}
+
+.ride{
+  text-align: center;
+  font-size: 30px;
+  padding-top: -10px;
+  margin: 10px;
+}
+
+.me{
+  text-align: center;
+  font-size: 25px;
+  color: black;
+}
+
+.div8{
+    text-align: center;
+    border-top: 1px solid orange; 
+    padding: 0;
+    margin: 0;   
+}
+
+.divvv{
+  background-image: linear-gradient(to bottom, rgb(250, 202, 114) 0%,rgb(250, 205, 122) 30px, rgb(212, 150, 33) 40%, rgb(224, 150, 12) 30%);
+  border-radius: 30px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+}
+
+.ready{
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 80px;
+    margin: 0;
+}
+
+.to{
+    font-size: 25px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top:20px;
+    /* width: 800px; */
+    text-align: center;
+
+}
+
+.market{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 20px;
+}
+
+
+
+.div8{
+  display: grid;
+  grid-template-columns: (3, 1fr);
+  grid-gap: 30px;
+  padding: 30px;
+  margin: 70px;
+}
+
+.div9{
+  background-color: orange;
+}
+
+footer{
+ padding-top: 20px;
+ padding-bottom: 20px;
+ margin: 0;
+ border-top: 1px solid orange;
+ 
+}
+
+.like{
+    margin-top: 20px;
+    padding: 20px;
+    color: orange;
+}
+
+
+</style>
+<body>
+    <div>
+        <header class="header">
+            <p class="logo">Shenki-bazaar</p>
+          <ul>
+          <li><a class="link" href=#>Home</a></li>
+          <li><a class="link" href="#div">Account marketplace</a></li>
+          <li><a class="link" href="#div3">Feature </a></li>
+          <li><a class="link" href="#div4">How it works</a></li>
+          <li><a class="link" href=Shenki-bazaar target="_blank">Store</a></li>
+          </ul>
+          <a href="Shenki-bazaarsignup.html" target="_blank"><button>Sign up</button></a>>
+        </header>
+    </div>
+
+    <div class="main">
+        <img src="frank001/homeBanner (1).png" class="unn">
+    <h1>Discover Unique Accounts in our Marketplace</h1>
+        
+    <p class="one">
+        Enhance your online presence: Preview, verify and acquire geniune accounts on Shenki-bazaar
+    </p>
+    </div>
+
+
+    <div id="div">
+    <div class="div2">
+
+    <div>
+    <img src="frank001/accounts-marketplace1.webp" class="img1">
+    </div>
+
+    <div class="divv">
+     <h2>Accounts Marketplace</h2>
+     <p class="para">
+        At Shenki-bazaar, we believe in the power of community-driven commerce. Explore a diverse marketplace filled with all types of accounts, curated by individual sellers just like you. Whether you're searching for games, video, work, or everyday social media accounts, our platform connects you directly with sellers passionate about providing authentic accounts.
+     </p>
+     <button class="butt">Purchase an account</button>
+    </div>
+
+    </div>
+    </div>
+
+    <div id="div3">
+    <div class="div3">
+    <p class="fea">Features</p>
+    <h3>Crafting Connections, One Sale at a Time</h3>
+   
+    <main class="omo">
+        <section class="image-grid">
+          <div class="image-item">
+            <h4>
+            Unique Selections
+            </h4>
+            <p class="graph">
+                Browse through a curated collection of unique accounts that reflect the creativity and craftsmanship of our community of sellers.
+            </p>
+            <img src="frank001/smartphone.png" class="ada" >
+            
+          </div>
+    
+          <div class="image-item">
+            <h4>
+                Reviews and Ratings
+            </h4>
+                <p class="graph">
+                    Make informed decisions by reading reviews and ratings from other buyers. Share your experiences to contribute to our growing community of trusted users.
+                </p>
+            <img src="frank001/ratings.png" class="ada" alt="Video 2">
+          </div>
+    
+          <div class="image-item">
+            <h4>
+            Secure Transactions
+            </h4>
+            <p class="graph">
+            Shop with confidence knowing that our platform prioritizes security. Your transactions are protected, and we facilitate a secure environment for both buyers and sellers.
+            </p>
+            <img src="frank001/lock.png" alt="Video 3" class="ada">
+          </div>
+    
+          <div class="image-item">
+            <h4>
+                Direct Communication
+            </h4>
+                <p class="graph">
+                    Connect with sellers directly to ask questions, and get personalized recommendations. Enjoy a more human and interactive shopping experience.
+                </p>
+            <img src="frank001/direct.png" class="ada" alt="Video 4">
+          </div>
+        </section>
+    </main>
+    </div>
+    </div>
+
+<div id="div4">
+<div class="div4">
+  <img src="frank001/how-works1.png" class="uno1">
+ 
+   <h5>How it works</h5>
+
+   <div class="div5">
+<div class="on">1</div>
+<h5 class="Explore">Explore</h5>
+<p class="point">
+Dive into our marketplace and discover a world of unique products. Use our intuitive search and filter options to find exactly what you're looking for.
+</p>
+
+<div class="on">2</div>
+<h5 class="Explore">Connect</h5>
+<p class="point">
+Communicate directly with sellers to ask questions, or discuss customization options. Our platform fosters a sense of connection between buyers and sellers.
+</p>
+
+<div class="on">3</div>
+<h5 class="Explore">Secure Checkout</h5>
+<p class="point">
+Once you've found your perfect item, proceed to our secure checkout process. Rest easy knowing that your payment is protected, and your purchase is in good hands.
+</p>
+
+<div class="on">4</div>
+<h5 class="Explore">Enjoy</h5>
+<p class="point">
+Sit back and relax as your chosen item makes its way to you. Join a community of like-minded individuals who appreciate the value of genuine and authentic product.
+</p>    
+   </div>
+
+</div>
+</div>
+
+<div class="div6">
+  <img src="frank001/seller1.png" class="unn1">
+<h6 class="beco">Become a Merchant</h6>
+<p class="poi">
+Elevate your sales journey with Shenki-bazaar. List your products effortlessly, and watch your sales soar. Join our community of sellers and reach customers globally.
+</p>
+</div>
+
+<main class="omu">
+  <h6 class="head">Why Choose Shenki-bazaar</h6>
+  <section class="imagegrider">
+    <div class="imageitem">
+      <img src="frank001/icon1-removebg-preview.png" class="adama" >
+      <h6 class="us">
+      Community-Centric
+      </h6>
+      <p class="grapher">
+        We prioritize building a close-knit community of buyers and sellers who share a passion for unique and quality products.
+      </p>
+           
+    </div>
+
+    <div class="imageitem">
+      <img src="frank001/icon2-removebg-preview.png" class="adama" >
+      <h6 class="us">
+        Support Local Businesses
+      </h6>
+      <p class="grapher">
+        
+        Empower small businesses and independent sellers by shopping directly from them. Every purchase you make contributes to the growth of individual entrepreneurs.
+      </p>
+           
+    </div>
+
+    <div class="imageitem">
+      <img src="frank001/icon3-removebg-preview.png" class="adama" >
+      <h6 class="us">
+        Personalized Experience
+      </h6>
+      <p class="grapher">
+        Enjoy a personalized shopping experience by directly engaging with sellers and discovering products curated with care and attention.
+      </p>
+           
+    </div>
+
+  </section>
+</main>
+
+<div class="div7">
+  <h6 class="last">Don’t just take our word for it</h6>
+  <p class="laster">Hear from some of our amazing customers who are using our platform.</p>
+
+<div id="alphabet">
+  <div id="abc">
+     <img src="frank001/fatima.png" class="were">
+    <h6 class="ride">Oyekanmi Rhoda</h5>
+  <p class="me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rat </p>
+  </div>
+
+  <div id="def"> 
+    <img src="frank001/kwame.png" class="were">
+    <h6 class="ride">Samuel Victor</h5>
+  <p class="me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rat </p>
+  </div>
+
+  <div id="ghi"> 
+    <img src="frank001/aisha.png" class="were">
+    <h6 class="ride">Okafor Stanley</h5>
+  <p class="me">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rat </p>
+  </div>
+</div>
+
+<div class="div8">
+  <div class="divvv">
+<h6 class="ready">Ready to Start Your Journey?</h6>
+<p class="to">Explore our marketplace now and unlock a world of genuine treasures. Join Acctbazaar today and experience a new way to buy and connect.</p>
+  </div>
+<a href="Shenki-bazaar.html"><button class="market">Explore marketplace</button></a>
+
+</div>
+
+
+<footer>
+  <p>&copy; 2024 Shenki-bazaar</p>
+
+  <div id="sociallinks">
+    <a href="https://google.com" class="like"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://google.com" class="like"><i class="fab fa-twitter"></i></a>
+    <a href="https://google.com" class="like"><i class="fab fa-instagram"></i></a>
+   </div>
+</footer>
+    
+</body>
+</html>

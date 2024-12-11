@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shenki-bazaar marketplace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+header {
+  background-color:rgb(245, 225, 187);
+  padding: 15px;
+  text-align: center;
+}
+
+.logo{
+    text-align: left;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  background-color: #ddd; 
+  border-radius: 5px;
+}
+
+nav a:hover{
+    background-color:orange;
+}
+
+nav a.active {
+  background-color: orange; 
+  color: white;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+.image-item {
+  padding: 10px;
+  background-color:rgb(245, 225, 187);
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-item:hover{
+  border: 1px solid rgb(240, 182, 73);
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-item p{
+  border-top: 2px solid orange;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.div{
+  text-align: center;
+  padding: 15px;
+}
+
+.image-item button{
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    background-color: orange;
+    margin-left: 120px;
+}
+
+a{
+  
+    color: black;
+    text-decoration: none;
+}
+
+
+.image-item button:hover{
+  color: white;
+  background-color: rgb(228, 157, 24);
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: orange;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr); 
+
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color:orange;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr); 
+
+  }
+  
+}
+
+footer{
+    background-color:rgb(245, 225, 187) ;
+    padding-left: 20px;
+}
+
+.like{
+    margin: 20px;
+    color: orange;
+}
+
+
+h1{
+  text-align: center;
+  color: orange;
+  font-size: 45px;
+  font-weight: 500;
+  background-color: none;
+  text-decoration: dotted;
+  padding: 20px;
+}
+
+.image-grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+h2{
+  text-align: center;
+  color: orange;
+  font-size: 45px;
+  font-weight: 500;
+  background-color: none;
+  /* text-decoration: underline; */
+  padding: 20px;
+}
+
+.image-items {
+  padding: 10px;
+  background-color:white;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-items:hover{
+  /* border: 1px solid rgb(240, 182, 73); */
+  border-radius: 10px;
+}
+
+.image-items img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.image-items p{
+  border-top: 2px solid orange;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.div{
+  text-align: center;
+  padding: 15px;
+}
+
+.image-items button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: orange;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+.image-items .button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: orange;
+    margin-right: 120px;
+    margin-left: 120px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.image-items button:hover{
+  color: white;
+  background-color: rgb(228, 157, 24);
+}
+
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: orange;
+  }
+
+  .image-grids {
+    grid-template-columns: repeat(2, 1fr); 
+
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color:orange;
+  }
+
+  .image-grids {
+    grid-template-columns: repeat(1, 1fr); 
+
+  }
+  
+}
+
+.image-gridss {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 30px;
+  padding: 20px;
+}
+
+.image-itemss {
+  padding: 10px;
+  background-color:white;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-itemss:hover{
+  /* border: 1px solid rgb(240, 182, 73); */
+  border-radius: 10px;
+}
+
+.image-itemss img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.image-itemss p{
+  border-top: 2px solid orange;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.div{
+  text-align: center;
+  padding: 15px;
+}
+
+.image-itemss button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: orange;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+.image-itemss button:hover{
+  color: white;
+  background-color: rgb(228, 157, 24);
+}
+
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: orange;
+  }
+
+  .image-gridss {
+    grid-template-columns: repeat(2, 1fr); 
+
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color:orange;
+  }
+
+  .image-gridss {
+    grid-template-columns: repeat(1, 1fr); 
+
+  }
+  
+}
+
+
+</style>
+
+
+
+<body>
+    <header>
+        <p class="logo">Shenki-bazaar</p>
+        <nav>
+            <ul>
+              <li><a href="#men">Men</a></li>
+              <li><a href="#women" class="active">Women</a></li>
+              <li><a href="#children">Children</a></li>
+            </ul>
+          </nav>
+      </header>
+    
+    <div id="men">
+      <main>
+        <h1>Male wears and accessories</h1>
+        <section class="image-grid">
+          
+          <div class="image-item">
+            <img src="frank001/cloth1-removebg-preview.png" alt="Video 1">
+            <p>Shenki-bazaar|Casual shirt</p>
+            <div class="div">NGN 25,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-item">
+            <img src="frank001/cloth2-removebg-preview.png" alt="Video 2">
+            <p>Shenki-bazaar|Jean jacket</p>
+            <div class="div">NGN 28,500</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-item">
+            <img src="frank001/cloth3-removebg-preview.png" alt="Video 3" class="rank">
+          <p>Shenki-bazaar|Vintage jacket</p>
+          <div class="div">NGN 30,000</div>
+          <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-item">
+            <img src="frank001/cloth4-removebg-preview.png" alt="Video 4">
+            <p>Shenki-bazaar |Jersey jacket</p>
+            <div class="div">NGN 29,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-item">
+            <img src="frank001/cloth5-removebg-preview.png" alt="Video 8">
+            <p>Shenki-bazaar | Jean jacket</p>
+            <div class="div">NGN 30,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-item">
+            <img src="frank001/cloth6-removebg-preview.png" alt="Video 5">
+            <p>Shenki-bazaar | Casual up&down</p>
+            <div class="div">NGN 55,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-item">
+            <img src="frank001/cloth7-removebg-preview.png" alt="Video 6">
+            <p>Shenki-bazaar | Casual up&down</p>
+            <div class="div">NGN 80,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-item">
+            <img src="frank001/cloth8-removebg-preview.png" alt="Video 4">
+            <p>Shenki-bazaar | Newbie up&down</p>
+            <div class="div">NGN 15,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-item">
+            <img src="frank001/cloth9-removebg-preview.png" alt="Video 4">
+            <p>Shenki-bazaar | Casual up&down</p>
+            <div class="div">NGN 80,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-item">
+            <img src="frank001/cloth10-removebg-preview.png" alt="Video 4">
+            <p>Shenki-bazaar | British jacket</p>
+            <div class="div">NGN 110,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-item">
+            <img src="frank001/cloth11-removebg-preview.png" alt="Video 4">
+            <p>Shenki-bazaar | Monkey jacket</p>
+            <div class="div">NGN 50,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-item">
+            <img src="frank001/cloth12-removebg-preview.png" alt="Video 4">
+            <p>Shenki-bazaar | Adult men suit</p>
+            <div class="div">NGN 250,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+        
+          </section>
+      </main>
+      </div>
+    
+
+      <div id="women">
+      <main>
+        <h2>Women wears and accessories</h2>
+        <section class="image-grids">
+          <div class="image-items">
+            <img src="frank001/maxi dress.webp" alt="Video 1">
+            <p>Shenki-bazaar | Maxi dress</p>
+            <div class="div">NGN 60,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-items">
+            <img src="frank001/midi dress.webp" alt="Video 2">
+            <p>Shenki-bazaar | Midi dress</p>
+            <div class="div">NGN 90,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-items">
+            <img src="frank001/helena dress.webp" alt="Video 3" class="rank">
+          <p>Shenki-bazaar | Helena dress</p>
+          <div class="div">NGN 60,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-items">
+            <img src="frank001/nate dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Nate dress</p>
+            <div class="div">NGN 77,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-items">
+            <img src="frank001/mini dress.webp" alt="Video 8">
+            <p>Shenki-bazaar | Mini dress</p>
+            <div class="div">NGN 85,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-items">
+            <img src="frank001/zoe mini dress.webp" alt="Video 5">
+          <p>Shenki-bazaar | Zoe mini dress</p>
+          <div class="div">NGN 70,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-items">
+            <img src="frank001/mylo mini dress.webp" alt="Video 6">
+          <p>Shenki-bazaar | Mylo mini dress</p>
+          <div class="div">NGN 45,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-items">
+            <img src="frank001/madeline mini dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Madeline mini dress</p>
+            <div class="div">NGN 80,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-items">
+            <img src="frank001/luan mini dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Luan mini dress</p>
+            <div class="div">NGN 75,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-items">
+            <img src="frank001/michelle halterneck dress.webp " alt="Video 4">
+            <p>Shenki-bazaar | Michelle halterneck dress</p>
+            <div class="div">NGN 100,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-items">
+            <img src="frank001/dylan one shoulder mini dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Dylan one shoulder mini dress</p>
+            <div class="div">NGN 50,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-items">
+            <img src="frank001/penelope mini dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Penelope mini dress</p>
+            <div class="div">NGN 75,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-items">
+            <img src="frank001/blaine mini dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Blaine mini dress</p>
+            <div class="div">NGN 60,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-items">
+            <img src="frank001/odessa maxi dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Odessa maxi dress</p>
+            <div class="div">NGN 80,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-items">
+            <img src="frank001/madeline mini dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Madeline mini dress</p>
+            <div class="div">NGN 60,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-items">
+            <img src="frank001/giana mini dress.webp" alt="Video 4">
+            <p>Shenki-bazaar | Giana mini dress</p>
+            <div class="div">NGN 60,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+          </section>
+      </main>
+      </div>
+
+      <div id="women">
+      <main>
+        <section class="image-gridss">
+          <div class="image-itemss">
+            <img src="frank001/ultraviolet1.avif" alt="Video 1">
+            <p>Shenki-bazaar | ultraviolet</p>
+            <div class="div">NGN 89,100</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-itemss">
+            <img src="frank001/ultraviolet2.avif" alt="Video 2">
+            <p>Shenki-bazaar | ultraviolet</p>
+            <div class="div">NGN 89,100</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-itemss">
+            <img src="frank001/ultraviolet3.avif" alt="Video 3" class="rank">
+          <p>Shenki-bazaar | ultraviolet</p>
+          <div class="div">NGN 89,100</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-itemss">
+            <img src="frank001/palm beach1.avif" alt="Video 4">
+            <p>Shenki-bazaar | Palm-beach</p>
+            <div class="div">NGN 75,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-itemss">
+            <img src="frank001/palm beach2.avif" alt="Video 8">
+            <p>Shenki-bazaar | Palm-beach</p>
+            <div class="div">NGN 75,000</div>
+            <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-itemss">
+            <img src="frank001/palm beach3.avif" alt="Video 5">
+          <p>Shenki-bazaar | Palm-beach</p>
+          <div class="div">NGN 75,000</div>
+          <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-itemss">
+          <img src="frank001/positano1.avif" alt="Video 6">
+          <p>Shenki-bazaar | positano</p>
+          <div class="div">NGN 90,000</div>
+          <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+    
+          <div class="image-itemss">
+            <img src="frank001/positano2.avif" alt="Video 4">
+            <p>Shenki-bazaar | positano</p>
+            <div class="div">NGN 90,000</div>
+          <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-itemss">
+            <img src="frank001/positano3.avif" alt="Video 4">
+            <p>Shenki-bazaar | positano</p>
+            <div class="div">NGN 90,000</div>
+          <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-itemss">
+            <img src="frank001/center stage1.avif" alt="Video 4">
+            <p>Shenki-bazaar | Center-stage</p>
+            <div class="div">NGN 60,000</div>
+          <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-itemss">
+            <img src="frank001/center stage2.avif" alt="Video 4">
+            <p>Shenki-bazaar | Center-stage</p>
+            <div class="div">NGN 60,000</div>
+          <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+
+          <div class="image-itemss">
+            <img src="frank001/center stage3.avif" alt="Video 4">
+            <p>Shenki-bazaar | Center-stage</p>
+            <div class="div">NGN 60,000</div>
+          <button type="submit"><a href="#">Purchase</a></button>
+          </div>
+          </section>
+      </main>
+    
+
+
+      
+      
+      
+      <footer>
+        <p>&copy; 2024 Shenki-bazaar</p>
+        <div id="sociallinks">
+            <a href="https://google.com" class="like"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://google.com" class="like"><i class="fab fa-twitter"></i></a>
+            <a href="https://google.com" class="like"><i class="fab fa-instagram"></i></a>
+           </div>
+      </footer>
+</body>
+</html>
